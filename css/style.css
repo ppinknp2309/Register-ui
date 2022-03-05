@@ -1,0 +1,166 @@
+body {
+	font-family: 'Kanit', serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media  only screen and (max-width: 767px)  {
+	.logo-area > a {
+		display: block;
+		height: 65px;
+	}
+}
+
+@media  only screen and (min-width: 768px) {
+	.logo-area > a {
+		display: block;
+		height: 100px;
+	}
+}
+
+@media  only screen and (max-width: 767px) {
+	.logo-area {
+		height: 65px;
+		background-color: #c2e2eb;
+	}
+}
+/* ใส่สีพื้นหลัง logo */
+@media  only screen and (min-width: 768px) {
+	.logo-area{
+		height: 100px;
+		background-color: #c2e2eb;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.logo-area > a >img {
+		max-width: 50%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.page-head {
+		border: 10px solid #3e889e;
+		margin-bottom: 30px;
+	}
+}
+/* ใส่กรอบให้ขอบด้านนอก */
+@media  only screen and (min-width: 768px) {
+	.page-head {
+		height: 140px;
+		border: 15px solid #3e889e;
+		margin-bottom: 30px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.head-name {
+		display: block;
+		color: #4eaac6;
+		font-size: 12vw;
+		text-align: center;
+	}
+}
+/* ใส่สีและกำหนดขนาดให้หัวข้อ  */
+@media  only screen and (min-width: 768px) {
+	.head-name > p {
+		color: #4eaac6;
+		font-size: 70px;
+		text-align: center;
+	}
+}
+@media  only screen and (max-width: 767px) {
+	.parent-element{
+		-webkit-transform-style: initial;
+		-moz-transform-style: initial;
+		transform-style: inherit;
+	}
+}
+@media  only screen and (min-width: 768px) {
+	.parent-element {
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d ;
+		transform-style: preserve-3d ;
+	}
+}
+/* จัด logo ให้อยู่กึ่งกลาง */
+.element {
+	position: relative;
+	top: 50%;
+	transform: perspective(1px) translateY(-50%);
+}
+@media only screen and (max-width: 767px) {
+	.registered {
+		height:auto;
+		padding: 0;
+		margin-top: 10px;
+	}
+}
+/* กำหนดตำแหน่ง  reg-btn */
+@media only screen and (min-width: 768px) {
+	.registered{
+		height: 100px;
+		padding: 0 0 0 26px;
+		margin-top: 10px;
+	}
+}
+/* กำหนดค่าให้ reg-btn */
+.reg-btn{
+	display: block;
+	padding: 7px 0 7px 0;
+	background-color: #4eaac6;
+	text-align: center;
+	color: white;
+	border-radius: 15px;
+	text-decoration: none;
+	-webkit-box-radius: 10px ;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0 , 0, 0, 0.13);
+	cursor: pointer;
+	margin-right: 10px;
+}
+@media only screen and (max-width: 767px) {
+	.reg-btn{
+		width: 70%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+/* กำหนดค่าให้ reg btn-hover */
+.reg-btn:hover {
+	display: block;
+	padding: 7px 0 7px 0 ;
+	background-color: #4eaac6;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+	-webkit-transform-radius: 10px ;
+	-moz-border-radius: 10px ;
+	box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.13);
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+	.reg-btn:hover{
+		width: 70%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.foot {
+	background-color: #3e889e;
+	padding: 40px 100px;
+}
+.foot > p {
+	color: white;
+	font-size: 15px;
+	font-weight: 400;
+	margin-left: 50px;
+}
+}.foot {
+	background-color: #3e889e;
+	padding: 40px 100px;
+}
+.foot > p {
+	color: white;
+	font-size: 15px;
+	font-weight: 400;
+	margin-left: 50px;
+}
