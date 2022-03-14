@@ -1,5 +1,6 @@
 <template>
-    <meta charset="utf-8">
+<q-layout view="hHh lpR fFf">
+   <meta charset="utf-8">
       <meta name="description" content="ACI THAIJO REGISTRATION PAGE">
             <meta property="og:title"  content="ThaiJo2: Traning registration" />
             <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -8,8 +9,6 @@
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
             <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" />
             <link rel="stylesheet" href="css/style.css" type="text/css">
-            <link rel="stylesheet" href="src/components/regis-form.vue">
-         
     <body>
       <header>
         <nav class="container">
@@ -22,56 +21,30 @@
               </div>
               <div class="col-xs-12 col-sm-2 registered parent-element">
                   <div class="element"></div>
-                 
-              <router-link to="/List" class="reg-btn">ผู้ลงทะเบียนแล้ว</router-link><br/>
-              <a href="ThaiJo2Agenda.pdf" class="reg-btn">กำหนดการ</a>
-              
+                    <q-btn class="reg-btn" unelevated rounded  label="ผู้ลงทะเบียนแล้ว" href="/"/>
+                    <br>
+                    <q-btn class="reg-btn" unelevated rounded  label="กำหนดการ" href="ThaiJo2Agenda.pdf"/>
+                    
        
               </div>
           </div>
-
       </nav>
-      
       </header>
-      
-      
-       <div class="container mt-5">
-      <router-view></router-view>
-      </div>
-      <div style="display: table;">
-            <div style="display: table-row; height: 55vh;">
-            <div style="display: table-cell"></div>
-            </div>
-        </div>
-       <footer class="container">
-                <div class="row tj-foot">
-                    <div class="col-xs-12 foot">
-                        <p>TCI THAIJO</p>
-                        <p>Copyright 2019-2021. TCI. All rights reserved.</p>
-                    </div>
-                </div>
-            </footer>
-           
     </body>
+    <center><h1><a href="https://tci-thailand.org/?p=1361">รายละเอียดการลงทะเบียน</a></h1></center>
+
     <q-page-container>
+      <router-view />
     </q-page-container>
 
-
     
-     
-            
-
-    
-   
-  
-    
-    
- 
+ </q-layout>
 </template>
 
 
 
-        
-    
-
-
+<script>
+  export default {
+    name:"Header"
+  };
+</script>
